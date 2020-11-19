@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>disappearing ninja! 🐱‍👤</title>
+    <script>
+      $(document).ready(function () {
+        console.log("= = = =  jQuery loaded = = = =");
+
+        // ninja image
+        $("img").click(function () {
+          $(this).fadeOut("slow");
+        });
+
+        // RESET button
+        $("button").click(function () {
+          $("img").fadeIn();
+          //$("img").css("display", "");
+        });
+      });
+    </script>
+    <style>
+      body * {
+        font-family: sans-serif;
+        /* outline: 1px solid red; */
+      }
+      h1,
+      h4 {
+        text-align: center;
+      }
+      div.wrapper {
+        width: 80%;
+        min-height: 300px;
+        margin: 0 auto;
+      }
+      img {
+        width: 144px;
+      }
+      div.container {
+        margin: 0 auto;
+        width: 80%;
+      }
+      div.row {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      button.reset {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background-color: black;
+        border-color: black;
+        border-radius: 10px;
+        padding: 2px 30px;
+      }
+      div.box {
+        /* background-color: red; */
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Disappearing Ninja 🐱‍👤</h1>
+      <h4>JQuery .fadeOut() fadeIn() or .css()</h4>
+      <div class="container">
+        <hr />
+        <div class="row">
+          <div class="box">
+            <img
+              src="https://s.clipartkey.com/mpngs/s/13-131812_avatars-clipart-ninja-ninja-avatar.png"
+              alt="ninja"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="https://s.clipartkey.com/mpngs/s/13-131812_avatars-clipart-ninja-ninja-avatar.png"
+              alt="ninja"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="https://s.clipartkey.com/mpngs/s/13-131812_avatars-clipart-ninja-ninja-avatar.png"
+              alt="ninja"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="https://s.clipartkey.com/mpngs/s/13-131812_avatars-clipart-ninja-ninja-avatar.png"
+              alt="ninja"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <img
+              src="https://s.clipartkey.com/mpngs/s/13-131812_avatars-clipart-ninja-ninja-avatar.png"
+              alt="ninja"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="https://s.clipartkey.com/mpngs/s/13-131812_avatars-clipart-ninja-ninja-avatar.png"
+              alt="ninja"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="https://s.clipartkey.com/mpngs/s/13-131812_avatars-clipart-ninja-ninja-avatar.png"
+              alt="ninja"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="https://s.clipartkey.com/mpngs/s/13-131812_avatars-clipart-ninja-ninja-avatar.png"
+              alt="ninja"
+            />
+          </div>
+        </div>
+        <hr />
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+  </body>
+</html>
